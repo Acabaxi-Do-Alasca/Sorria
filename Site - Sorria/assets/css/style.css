@@ -1,0 +1,199 @@
+:root {
+    /* cria uma variavél */
+    --cor-topo: #d9d9d9;
+    --cor-preta: black;
+    --cor-principal: #79b4c2;
+    --cor-branca: white;
+    --padding-20px: 20px;
+    --cor-fundo: #fafbff;
+    --cor-rodape: #d8f1fb82;
+}
+
+#cabecalho img{
+    width: 15%;
+    height: auto;
+}
+/* Tudo do (*) torna - se obrigatorio */
+* {
+    /* Deletar espaços entre os elementos*/
+    margin: 0px;
+    padding: 0px;
+    /* Fonte usada */
+    font-family: 'Roboto', sans-serif;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+#cabecalho {
+    /* pinta o fundo */
+    /* (var) indica uma variavel */
+    background-color: var(--cor-topo);
+    /*Deixa a pag flexivel, em linha*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* espaçamento interno */
+    padding: 10px;
+}
+
+#cabecalho nav a {
+    /* remover a decoração de link */
+    text-decoration: none;
+    color: var(--cor-preta);
+    transition: all 1s;
+}
+/* para fazer algo quando o mouse passar por cima */
+#cabecalho nav a:hover {
+    color: var(--cor-branca);
+    /* cor do fundo */
+    background-color: var(--cor-principal);
+    padding: 15px;
+    /* arredonda a borda */
+    border-radius: 15px;
+}
+
+.margin {
+    margin: 0px 15px;
+    /* 1° em cima e em baixo - 2° direita e esquerda */
+}
+
+#corpo #banner {
+    background-image: url(../img/banner.png);
+    /* Aumenta o tamanho da imagem */
+    height: calc(100vh - 93px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Usado para a imagem se ajustara tela */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-cima-baixo{
+    margin: 20px;
+    color: white;
+    font-size: 20pt;
+}
+
+#corpo #banner h1{
+    color: var(--cor-principal);
+    font-size: 50pt;
+}
+
+
+#corpo #sobre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+#corpo .txt{
+    margin-left: 60px;
+}
+
+#corpo #nos div{
+    padding: var(--padding-20px);
+}
+
+#sobre .img{
+    text-align: right;
+    margin-right: 160px;
+}
+
+#sobre .img img {
+    width: 300px;
+}
+
+#corpo #nos .negrito{
+    color: var(--cor-principal);
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+#corpo #nos p{
+    margin-top: 10px;
+    font-size: 18pt;
+}
+
+#corpo #beneficios{
+    text-align: center;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+#corpo #beneficios #titulo h4 {
+    font-weight: bold;
+}
+
+#corpo #beneficios #grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--padding-20px)
+}
+
+#form #form-info{
+    text-align: center;
+    padding: var(--padding-20px);
+}
+
+#form #formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form #formulario input{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid var(--cor-preta);
+    width: 300px;
+    outline: none;
+}
+
+#form #formulario #botao{
+    width: 300px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    border: none;
+}
+
+#form #formulario div{
+    margin: 5px 0px;
+}
+
+#form{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#rodape{
+    background-color: var(--cor-rodape);
+    text-align: center;
+    padding: var(--padding-20px);
+}
+
+#content-menu{
+    display: none;
+}
+
+button{
+    padding: var(--padding-20px);
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-topo);
+    cursor: pointer;
+}
+
+.fim img{
+    width: 100%;
+}
+#
